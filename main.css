@@ -1,0 +1,826 @@
+ /* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+		  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+        display: block;
+}
+body {
+        line-height: 1.5;
+}
+ol, ul {
+        list-style: none;
+}
+blockquote, q {
+        quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+        content: '';
+        content: none;
+}
+table {
+        border-collapse: collapse;
+        border-spacing: 0;
+}
+/* ==== END CSS RESET ==== */
+
+
+
+
+/* 
+	Sötétkék:    #4E7082
+	Közepeskék:  #80AEB5
+	Világoskék:  #D7E7EA
+	Nagyon v.k.: #F3F7F8
+
+	Sötétbarna:  #B56422
+
+	Szürke: #f7f7f7
+*/
+
+
+
+
+/* ========== BASE STYLES ========== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fff;
+}
+
+h1 {
+	font-size: 3.5rem;
+	font-weight: 700;
+	font-family: 'Caveat', cursive;
+	color: #B56422;
+}
+
+h2 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	font-family: 'Caveat', cursive;
+	color: #B56422;
+}
+
+p {
+	font-size: 1rem;
+	color: #4E7082;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.sleep {
+	width: 100%;
+	height: 100vh;
+	background-color: #4E7082;
+}
+.sleep img {
+	width: 100%;
+	height: 99.2%;
+}
+
+
+/* ========== FEJLÉC ========== */
+
+
+.header1 {
+	width: 100%;
+	z-index: 99;
+	position: fixed;
+	display: block;
+}
+
+.header1 .logo {
+	width: 20%;
+	display: inline-block;
+	margin-left: 6%;
+	margin-right: 3%;
+}
+
+.header1 .logo img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.header1 .menu {
+	display: inline-block;
+	height: 12vh;
+	width: 70%;
+	padding-left: 5%;
+}
+
+.header1 .menu a {
+	font-size: 1.6rem;
+	line-height: 12vh;
+	margin-right: 8%;
+	color: #4E7082;
+	padding: 0 0.5%;
+	font-family: 'Caveat', cursive;
+	font-weight: 700;	
+}
+
+.header1 .menu a:hover {
+	border: solid 3px #B56422;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+
+
+.header2 {
+	width: 100%;
+	z-index: 99;
+	position: fixed;
+	background-color: #4E7082;
+	display: none;
+}
+
+.header2 .logo {
+	width: 20%;
+	display: inline-block;
+	margin-left: 6%;
+	margin-right: 3%;
+}
+
+.header2 .logo img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.header2 .menu {
+	display: inline-block;
+	height: 12vh;
+	width: 70%;
+	padding-left: 5%;
+}
+
+.header2 .menu a {
+	font-size: 1.6rem;
+	line-height: 12vh;
+	margin-right: 8%;
+	color: #fff;
+	padding: 0 0.5%;
+	font-family: 'Caveat', cursive;
+	font-weight: 700;	
+}
+
+.header2 .menu a:hover {
+	border: solid 3px #fff;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+
+
+
+/* ========== KEZDŐLAP ========== */
+
+
+
+.opening {
+	width: 100%;
+	height: auto;
+	margin-bottom: -1vh;
+}
+
+
+
+
+
+.con1 {
+	width: 100%;
+	height: auto;
+	padding: 15vh 0vh;
+	background-color: #fff;
+	background-image: url("assets/optic.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.con1 .area1 {
+	width: 89%;
+	margin-left: 6%;
+	margin-bottom: 15vh;
+	background: transparent;
+}
+
+.con1 .area1 h1 {
+	margin-bottom: 8vh;
+	line-height: 1;
+}
+
+.con1 h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #4E7082
+}
+
+
+
+.con1 .subarea {
+	display: inline-block;
+	width: 25.3%;
+	height: auto;
+	margin-left: 6%;
+	float: left;
+	/* box-shadow:  0 25px 60px 0 rgb(69 78 95 / 36%); */
+	background: transparent;
+	border-radius: 8px;
+	/* border: solid 1px rgb(224 224 224); */
+	margin-bottom: 15vh;
+}
+
+.con1 .area2 {
+	margin-left: %;
+}
+
+.con1 .subarea p {
+	font-weight: bold;
+	display: block;
+	width: 65%;
+	vertical-align: top;
+}
+
+.subarea .line {
+	width: 27%;
+	height: 2px;
+	background-color: #B56422;
+	margin-bottom: 5vh;
+}
+
+.subarea svg {
+	width: 25%;
+	display: block;
+	margin-bottom: 5vh;
+} 
+
+.subarea .sec-svg {
+	width: 25%;
+}
+
+
+
+.clear {
+	clear: both;
+}
+
+
+
+.vt {
+	display: inline-block;
+	width: 25.3%;
+	margin-left: 6%;
+	float: left;
+	position: relative;
+	border-radius: 8px;
+	transition: all 0.5s;
+	background-color: #4E7082;
+}
+
+.vt-image {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.vt .title {
+	background-color: rgba(0,0,0,0.5);
+	padding: 1rem;
+	text-align: center;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 600;
+	width: 100%;
+	position: absolute; bottom: 0; left: 0; right: 0;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.vt:hover {
+	border: solid 10px #4E7082;
+	transition: all 0.5s;
+}
+
+
+
+
+
+.quote {
+	width: 100%;
+	padding: 15vh 6%;
+	background-color: #f7f7f7;
+	line-height: 1.3;
+}
+.quote p {
+	margin-top: 5vh;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+
+
+
+
+.con3 {
+	width: 100%;
+	height: auto;
+}
+
+.con3 .subcon {
+	width: 100%;
+	height: auto;
+	padding: 15vh 6%;
+	padding-bottom: 20vh;
+	background-image: url(assets/back2.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;	
+	background-color: #fff;
+}
+
+.con3 .staff {
+	padding: 2rem;
+	width: 22%;
+	margin-right: 3.35%;
+	background-color: #fff;
+	display: inline-block;
+	box-shadow:  0 25px 30px 0 rgb(69 78 95 / 30%);
+	border-radius: 8px;
+	border: solid 1px #4E7082;
+	transition: all .5s;
+}
+
+.con3 .last {
+	margin-right: 0;
+}
+
+.con3 .staff:hover {
+	border: 3px solid #B56422;
+	width: 23%;
+	transition: all .5s;
+}
+
+.con3 .staff-image {
+	width: 100%;
+	margin-bottom: 12%;
+}
+
+.con3 h2 {
+	text-align: center;
+	margin-bottom: 4vh;
+	font-size: 2.1rem;
+}
+
+.con3 h1 {
+	margin-bottom: 15vh;
+	color: #fff;
+	line-height: 1;
+}
+
+.con3 p {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+
+
+
+
+.con4 {
+	width: 100%;
+	height: auto;
+}
+
+
+
+.con4 .opinions {
+	width: 100%;
+	height: auto;
+	padding-left: 6%;
+	padding-right: 35%;
+	padding-top: 15vh;
+	padding-bottom: 15vh;
+	background-color: #f7f7f7;
+	background-image: url("assets/back3.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.con4 .opinions h1 {
+	margin-bottom: 10vh;
+	line-height: 1.5;
+}
+
+.con4 .opinions p {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.o-p-1 {
+	margin-bottom: 8vh;
+}
+
+.o-p-2 {
+	font-style: italic;
+	margin-bottom: 8vh;
+}
+
+
+
+.opi {
+	display: none;
+	height: 39vh;
+}
+
+.opi-nav {
+	width: 20vw;
+	height: 1.2rem;
+}
+
+.opi-nav .navi {
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 0.4rem;
+	box-shadow:  0px 3px 5px 0 rgb(0 0 0 / 80%);
+	background-color: #fff;
+	float: left;
+	margin-right: 1.5rem;
+}
+
+
+.opinions .opi-1 { display: block; }
+.opinions .opi-2 { display: none; }
+.opinions .opi-3 { display: none; }
+.opinions .opi-4 { display: none; }
+.opinions .opi-5 { display: none; }
+.opinions .opi-6 { display: none; }
+.opinions .opi-7 { display: none; }
+
+.opi-nav .navi-1 { background-color: #4E7082; }
+.opi-nav .navi-2 { background-color: #fff; }
+.opi-nav .navi-3 { background-color: #fff; }
+.opi-nav .navi-4 { background-color: #fff; }
+.opi-nav .navi-5 { background-color: #fff; }
+.opi-nav .navi-6 { background-color: #fff; }
+.opi-nav .navi-7 { background-color: #fff; }
+
+
+.opi-nav .navi:hover {
+	cursor: pointer;
+}
+
+
+
+
+
+.con4 .tile {
+	width: 88%;
+	height: auto;
+	margin-left: 6%;
+	background-color: #fff;
+	box-shadow:  0px 0px 50px 0 rgb(69 78 95 / 25%);
+	position: relative; bottom: -195px;
+	border-radius: 8px;
+}
+
+.con4 iframe {
+	width: 64%;
+	display: inline-block;
+	border-top-left-radius: 8px;
+}
+
+.con4 .contact {
+	width: 35%;
+	padding-left: 5vw;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.con4 .ch1 {
+	padding-top: 6vh;
+	margin-bottom: 7vh;
+	color: #4E7082;
+}
+
+.con4 .contact .row {
+	display: block;
+	margin-bottom: 5vh;
+}
+
+
+.con4 .row svg {
+	width: 6%;
+	height: auto;
+	display: inline-block;
+}
+
+.con4 .row p {
+	display: inline-block;
+	position: relative; top: -0.5rem;
+	margin-left: 3vh;
+	font-family: 'Caveat', cursive;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+
+
+footer {
+	background-color: #1a2d38;
+	width: 100%;
+	padding-top: 40vh;
+}
+
+.sub-foot {
+	padding-top: 15vh;
+}
+
+footer .first-row {
+	padding-left: 6%;
+	padding-right: 6%;
+	margin-bottom: 10vh;
+}
+
+
+footer .first-col {
+	width: 30%;
+	height: auto;
+	display: inline-block;
+}
+
+footer .first-col img {
+	width: 75%;
+	margin-bottom: 6.5vh;
+	display: block;
+}
+
+footer .first-col svg{
+	width: 6%;
+	display: inline-block;
+	margin-bottom: 3.3vh;
+}
+
+footer .first-col p {
+	font-size: 1rem;
+	display: inline-block;
+	color: #fff;
+	margin-left: 1vw;
+	margin-bottom: 3vh;
+	vertical-align: top;
+	position: relative; bottom: -0.1rem;
+}
+
+
+
+footer .sec-col {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5vw;
+}
+
+footer .op-t {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 4.3vh;
+	color: #fff;
+}
+
+footer .sec-col td {
+	padding-top: 1.8vh;
+	color: #fff;
+}
+
+footer .sec-col .time {
+	padding-left: 2vw;
+}
+
+
+
+footer .third-col {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 11.5vw;
+	font-weight: bold;
+	color: #fff;
+}
+
+footer .links {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 4.3vh;
+	color: #fff;
+	
+}
+
+footer .third-col a {
+	font-size: 1rem;
+	display: block;
+	margin-top: 2.3vh;
+	color: #fff;
+}
+
+
+
+footer .fourth-col {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 11.5vw;
+}
+
+footer .fourth-col a {
+	font-size: 1rem;
+	display: block;
+	margin-top: 2.3vh;
+	color: #fff;
+}
+
+
+
+footer .sec-row {
+	background-color: #0c141a;
+	padding: 2vh 8.5%;
+	text-align: center;
+}
+
+footer .sec-row p {
+	color: #fff;
+	font-size: 0.8rem;
+}
+
+
+/* ========== MIVEL FOGLALKOZUNK? ========== */
+
+
+.mf-con1 {
+	padding-top: 27vh;
+}
+
+
+.mf-con2 {
+	padding-top: 27vh;
+}
+
+
+.mf-con3 {
+	padding-top: 27vh;
+}
+
+
+.mf-con4 {
+	padding-top: 27vh;
+}
+
+
+.mf-con5 {
+	padding-top: 27vh;
+}
+
+
+.mf-con6 {
+	padding-top: 27vh;
+}
+
+
+/* ========== MUNKATÁRSAINK ========== */
+
+
+
+
+
+/* ========== ÁRAK ========== */
+
+
+
+
+
+/* ========== GYEREKEKNEK ========== */
+
+
+.gy-con1 {
+	padding-top: 27vh;
+}
+
+
+.gy-con2 {
+	padding-top: 27vh;
+}
+
+
+.gy-con3 {
+	padding-top: 27vh;
+}
+
+
+.gy-con4 {
+	padding-top: 27vh;
+}
+
+
+/* ========== FELNŐTTEKNEK ========== */
+
+
+.f-con1 {
+	padding-top: 27vh;
+}
+
+
+.f-con1 {
+	padding-top: 27vh;
+}
+
+
+.f-con1 {
+	padding-top: 27vh;
+}
+
+
+/* ========== SPORTOLÓKNAK ========== */
+
+
+.s-con1 {
+	padding-top: 27vh;
+}
+
+
+/* ========== TUDÁSTÁR ========== */
+
+
+.know {
+	width: 100%;
+	background-color: #F3F7F8;
+	padding: 7% 12%;
+	line-height: 2.3rem;
+}
+.know h1 {
+	font-size: 2.5rem;
+	color: #B56422;
+	margin-bottom: 6%;
+}
+.know p {
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #4E7082;
+	margin-top: 3%;
+}
+.know .book {
+	width: 100%;
+	margin-top: 10%;
+	padding: 5% 5%;
+	border-radius: 1%;
+	background-color: #fff;
+	box-shadow: 1px 1px 0.7rem;
+}
+
+.know .book .book-img {
+	width: 20%;
+	display: inline-block;
+}
+.know .book .book-img img {
+	width: 100%;
+}
+
+.know .book .book-text {
+	width: 65%;
+	display: inline-block;
+	float: right;
+	margin-right: 7%;
+}
+.know .book .book-text h2 {
+	padding: 4% 0%;
+	color: #B56422;
+}
+.know .book .book-text a {
+	font-size: 1.5rem;
+}
